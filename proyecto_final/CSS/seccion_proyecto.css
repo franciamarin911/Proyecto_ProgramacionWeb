@@ -1,0 +1,283 @@
+/* Introducción proyectos */
+.seccion-introduccion-proyectos {
+  margin-top: 2rem;
+  margin-bottom: 1.75rem;
+  padding: 1.75rem 1.5rem;
+  background: radial-gradient(circle at top left,
+      rgba(234, 179, 8, 0.12),
+      transparent 55%),
+    linear-gradient(135deg, #0f172a, #111827);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(250, 204, 21, 0.55);
+  box-shadow: 0 18px 45px rgba(250, 204, 21, 0.35);
+}
+
+.encabezado-proyectos h2 {
+  margin: 0 0 0.75rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.4vw + 0.5rem, 2rem);
+  color: var(--blanco);
+}
+
+.encabezado-proyectos p {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: var(--gris-claro);
+}
+
+/* Filtros proyectos 3D */
+.filtros-proyectos {
+  margin-top: 1.5rem;
+}
+
+.filtros-proyectos h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gris-medio);
+  font-weight: 500;
+}
+
+.contenedor-botones-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.boton-filtro-proyecto {
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--gris-claro);
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+  transition: var(--transicion);
+}
+
+.boton-filtro-proyecto::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--gris-medio);
+  opacity: 0.7;
+  transition: var(--transicion);
+}
+
+.boton-filtro-proyecto:hover {
+  border-color: var(--amarillo);
+  color: var(--blanco);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 36px rgba(250, 204, 21, 0.25);
+}
+
+.boton-filtro-proyecto.activo {
+  background: linear-gradient(135deg, var(--amarillo), var(--amarillo-oscuro));
+  color: var(--azul-oscuro);
+  border-color: transparent;
+}
+
+.boton-filtro-proyecto.activo::before {
+  background: var(--rojo-oscuro);
+}
+
+/* Listado proyectos 3D */
+.listado-proyectos-3d {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.tarjeta-proyecto-3d {
+  background: radial-gradient(circle at top left,
+      rgba(234, 179, 8, 0.10),
+      transparent 60%),
+    linear-gradient(135deg, #020617, #020617);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tarjeta-proyecto-3d:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(250, 204, 21, 0.35);
+  border-color: rgba(250, 204, 21, 0.7);
+}
+
+.tarjeta-proyecto-3d header {
+  padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.titulo-proyecto-3d {
+  margin: 0 0 0.4rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--blanco);
+}
+
+.resumen-proyecto-3d {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--gris-claro);
+  line-height: 1.6;
+}
+
+.contenedor-video-proyecto {
+  position: relative;
+  margin: 0.75rem 1.25rem 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #020617;
+  border: 1px solid rgba(15, 23, 42, 0.9);
+}
+
+.contenedor-video-proyecto::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-proyecto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.contenedor-video-proyecto figcaption {
+  padding: 0.7rem 0.85rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--gris-medio);
+  background: rgba(15, 23, 42, 0.98);
+  border-top: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.datos-proyecto-3d {
+  padding: 0 1.25rem 1.2rem;
+  margin-top: auto;
+}
+
+.lista-datos-proyecto {
+  list-style: none;
+  margin: 0;
+  padding: 0.85rem 0.9rem;
+  border-radius: 0.9rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px dashed rgba(148, 163, 184, 0.6);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.lista-datos-proyecto li {
+  font-size: 0.87rem;
+  color: var(--gris-claro);
+}
+
+.lista-datos-proyecto strong {
+  font-weight: 600;
+  color: var(--amarillo);
+}
+
+/* Tarjetas ocultas al filtrar*/
+.tarjeta-proyecto-3d.oculto {
+  display: none;
+}
+
+/* Llamado a la acción */
+.llamado-accion-proyectos {
+  margin-top: 3rem;
+  padding: 2rem 1.75rem;
+  border-radius: var(--radius-xl);
+  background: radial-gradient(circle at top left, rgba(234, 179, 8, 0.26), transparent 60%),
+    linear-gradient(135deg, #0f172a, #111827);
+  border: 1px solid rgba(250, 204, 21, 0.6);
+  box-shadow: 0 18px 45px rgba(250, 204, 21, 0.4);
+  text-align: center;
+}
+
+.llamado-accion-proyectos h2 {
+  margin: 0 0 0.75rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: clamp(1.35rem, 2vw + 0.5rem, 1.8rem);
+  color: var(--amarillo);
+}
+
+.llamado-accion-proyectos p {
+  margin: 0 0 1.25rem;
+  font-size: 0.98rem;
+  color: var(--gris-claro);
+  line-height: 1.7;
+}
+
+.boton-contacto-proyectos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--rojo), var(--rojo-oscuro));
+  color: var(--blanco);
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: none;
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.5);
+  cursor: pointer;
+  transition: var(--transicion);
+}
+
+.boton-contacto-proyectos::after {
+  content: "→";
+  font-size: 1.05rem;
+}
+
+.boton-contacto-proyectos:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 24px 50px rgba(220, 38, 38, 0.7);
+}
+
+/* Footer genérico para esa página */
+.pie-sitio {
+  margin-top: 3rem;
+  padding: 1.5rem 1.25rem 2.2rem;
+  background: #020617;
+  border-top: 1px solid rgba(55, 65, 81, 0.9);
+}
+
+.contenedor-pie {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--gris-medio);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.contenedor-pie p {
+  margin: 0.2rem 0;
+}
