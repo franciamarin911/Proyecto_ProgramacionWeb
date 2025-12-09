@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <meta name="description"
+              content="MEGA CONSTRUCCIONES — Soluciones integrales en construcción: proyectos residenciales, comerciales y remodelaciones. Solicita tu cotización." />
+       <link rel="canonical" href="https://www.tusitio.com/" />
+       <title>MEGA CONSTRUCCIONES</title>
+       <link rel="stylesheet" href="/proyecto_final/CSS/Proyecto.css" />
+       <!-- FAVICONS DE MEGACONSTRUCCIONES-->
+       <link rel="icon" href="/proyecto_final/imagenes_proyecto/FAVICON_IMAGENES/favicon.ico">
+       <!-- ICONOS DE REDES -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body class="pagina-inicio">
+       <!-- ENCABEZADO DEL SITIO -->
+       <header class="header" role="banner">
+              <img src="/proyecto_final/imagenes_proyecto/logo_MEGACONSTRUCCIONES.png"
+                     alt="Logotipo de MEGA CONSTRUCCIONES" width="180" height="auto" />
+
+              <ul>
+                     <li type="none">
+                            <h1>MEGA CONSTRUCCIONES</h1>
+                     </li>
+                     <li type="none">
+                            <p>Construyendo futuro con calidad y confianza</p>
+                     </li>
+              </ul>
+
+              <!-- BOTÓN HAMBURGUESA DENTRO DEL HEADER -->
+              <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                     <span class="menu-line"></span>
+                     <span class="menu-line"></span>
+                     <span class="menu-line"></span>
+              </button>
+       </header>
+
+       <!-- MENÚ DE NAVEGACIÓN -->
+       <nav class="menu-navegacion" aria-label="Navegación principal">
+              <ul class="lista-menu">
+                     <li type="none"><a href="#inicio">INICIO</a></li>
+                     <li type="none"><a href="#nosotros">NOSOTROS</a></li>
+                     <li type="none"><a href="proyectos.html">PROYECTOS</a></li>
+                     <li type="none"><a href="servicios.html">SERVICIOS</a></li>
+                     <li type="none"><a href="contacto.html">CONTACTO</a></li>
+                     <li type="none"><a href="#elegirnos">¿POR QUÉ ELEGIRNOS?</a></li>
+                     <li type="none"><a href="#galeria">GALERÍA</a></li>
+              </ul>
+       </nav>
+
+       <aside>
+              <h2>Recibe una llamada</h2>
+              <!-- FORMULARIO PARA LLAMADA -->
+              <fieldset>
+                     <label for="NombreC">Nombre</label><br />
+                     <input type="text" id="NombreC" name="Nombre" required /><br />
+                     <label for="CelularC">Celular</label><br />
+                     <input type="tel" id="CelularC" name="Celular" required /><br />
+                     <label for="CorreoC">Correo</label><br />
+                     <input type="email" id="CorreoC" name="Correo" required /><br />
+                     <label for="InteresC">Servicio de interés</label><br />
+                     <select id="InteresC" name="InteresC" required>
+                            <option value="" disabled selected>Selecciona un servicio...</option>
+                            <option value="Diseño Arquitectónico">Diseño Arquitectónico</option>
+                            <option value="Construcción">Construcción</option>
+                            <option value="Remodelación">Remodelación</option>
+                            <option value="Supervisión de Obra">Supervisión de Obra</option>
+                            <option value="Ingeniería">Ingeniería</option>
+                            <option value="Acabados">Acabados</option>
+                            <option value="Servicios Especiales">Servicios Especiales</option>
+                     </select><br />
+                     <button type="submit" id="form-llamada">Solicitar llamada</button>
+              </fieldset>
+
+              <h3>Redes sociales</h3>
+              <ul class="lista-redes">
+                     <li>
+                            <a href="https://www.facebook.com/davo10flo" target="_blank" rel="noopener noreferrer"
+                                   class="icono-red icono-facebook" aria-label="Facebook">
+                                   <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                     </li>
+                     <li>
+                            <a href="https://www.tiktok.com/@megaconstrucciones1" target="_blank"
+                                   rel="noopener noreferrer" class="icono-red icono-tiktok" aria-label="TikTok">
+                                   <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                     </li>
+              </ul>
+
+              <!-- SECCIÓN DE ANUNCIOS -->
+              <section class="aside-anuncios" aria-label="Promociones y anuncios">
+                     <h3>Promociones</h3>
+
+                     <article class="anuncio-item">
+                            <h4>Descuento en diseño 3D</h4>
+                            <p>Hasta <strong>20% de descuento</strong> en proyectos 3D contratados este mes.</p>
+                     </article>
+
+                     <article class="anuncio-item">
+                            <h4>Remodelaciones rápidas</h4>
+                            <p>Planes especiales para cocinas y baños con entrega en tiempo récord.</p>
+                     </article>
+
+                     <article class="anuncio-item">
+                            <h4>Asesoría gratuita</h4>
+                            <p>Agenda una visita técnica sin costo para evaluar tu proyecto.</p>
+                     </article>
+              </section>
+              <section class="aside-anuncios">
+                     <h3>Anuncios</h3>
+
+                     <div class="anuncios-grid">
+                            <img src="/proyecto_final/imagenes_proyecto/anuncio1.jpeg" alt="Promoción 1">
+                            <img src="/proyecto_final/imagenes_proyecto/anuncio2.png" alt="Promoción 2">
+                     </div>
+              </section>
+       </aside>
+
+       <main id="main-contenido">
+              <!-- Inicio -->
+              <section id="inicio" class="inicio">
+                     <article>
+                            <header>
+                                   <h2 id="inicio-titulo">Bienvenidos a MEGA CONSTRUCCIONES</h2>
+                            </header>
+                            <p><em>Cada estructura que levantamos es el reflejo de nuestra experiencia, precisión y
+                                          compromiso con la excelencia. Construimos para durar.</em></p>
+                            <div class="botones-inicio">
+                                   <button id="Btn_Cotizacion">Cotiza tu proyecto</button>
+                                   <button id="Btn_UnirseEquipo">Únete a nuestro equipo</button>
+                            </div>
+                     </article>
+              </section>
+              <!-- Nosotros -->
+              <section id="nosotros" class="nosotros">
+                     <div class="nosotros-contenido">
+
+                            <!-- COLUMNA DE TEXTO -->
+                            <div class="nosotros-texto">
+                                   <h2 id="nosotros-titulo">¿Quiénes somos?</h2>
+                                   <p>
+                                          Somos una empresa con amplia experiencia en el mundo de la construcción
+                                          y el diseño de proyectos 3D. Nos enfocamos en crear obras seguras,
+                                          funcionales y estéticamente atractivas, aprovechando al máximo cada
+                                          espacio y cada inversión de nuestros clientes.
+                                   </p>
+                                   <p>
+                                          En MEGACONSTRUCCIONES te acompañamos desde la idea inicial hasta la
+                                          entrega final, combinando tecnología, planificación y un equipo
+                                          profesional comprometido con la calidad.
+                                   </p>
+                            </div>
+
+                            <!-- COLUMNA DE IMAGEN -->
+                            <figure class="nosotros-imagen">
+                                   <img src="/proyecto_final/imagenes_proyecto/edifAunquisamaña.jpeg"
+                                          alt="Render 3D del edificio familiar en Auquisamaña" />
+                            </figure>
+
+                     </div>
+              </section>
+
+              <!-- ¿POR QUE ELEGIRNOS? -->
+              <section id="elegirnos">
+                     <h2 id="elegirnos-title">¿Por qué elegirnos?</h2>
+                     <p class="intro">
+                            En MEGA CONSTRUCCIONES ofrecemos soluciones integrales en construcción, combinando
+                            experiencia, precisión y compromiso en cada proyecto.
+                     </p>
+                     <div class="elegir-grid">
+                            <div class="ele-item">
+                                   <h3>Experiencia comprobada</h3>
+                                   <p>Proyectos residenciales, comerciales y familiares con resultados profesionales.
+                                   </p>
+                            </div>
+                            <div class="ele-item">
+                                   <h3>Calidad y seguridad</h3>
+                                   <p>Materiales certificados y técnicas modernas que aseguran estructuras sólidas y
+                                          duraderas.</p>
+                            </div>
+                            <div class="ele-item">
+                                   <h3>Cumplimiento de plazos</h3>
+                                   <p>Planificación precisa para entregas puntuales sin comprometer la calidad.</p>
+                            </div>
+                            <div class="ele-item">
+                                   <h3>Atención personalizada</h3>
+                                   <p>Acompañamos a cada cliente desde el diseño hasta la entrega final, con
+                                          comunicación clara y transparente.</p>
+                            </div>
+                     </div>
+              </section>
+              <!-- GALERIA -->
+              <section id="galeria">
+                     <h2 id="galeria-titulo">Galería</h2>
+
+                     <div class="galeria-botones">
+                            <button class="galeria-btn" data-filter="exterior">Proyectos exteriores</button>
+                            <button class="galeria-btn" data-filter="interior">Proyectos interiores</button>
+                            <button class="galeria-btn" data-filter="progreso">Proyectos en progreso</button>
+                            <button class="galeria-btn" data-filter="equipo">Nuestro equipo</button>
+                     </div>
+
+                     <div class="fotos">
+                            <!-- Flechas del carrusel -->
+                            <button class="galeria-arrow prev" aria-label="Imagen anterior">&#10094;</button>
+                            <button class="galeria-arrow next" aria-label="Imagen siguiente">&#10095;</button>
+
+                            <!-- Aquí se mostrarán las imágenes como carrusel -->
+                            <!-- PAGINADOR (puntitos) -->
+                            <div class="paginador-galeria" id="paginador-galeria"></div>
+
+                            <!-- TODAS LAS IMÁGENES -->
+                            <!-- EXTERIORES -->
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/0bb3cf4c-3f8d-40ca-87e6-9798f89db58e.jpeg"
+                                   alt="Proyecto exterior 1" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/3947fbfc-5fe2-42f2-a387-ac7259304ab7.jpeg"
+                                   alt="Proyecto exterior 2" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/418c6b95-8043-40b1-9e59-72218354d1b2.jpeg"
+                                   alt="Proyecto exterior 3" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/4b5ace92-07d9-4665-bb80-cd19fdf31742.jpeg"
+                                   alt="Proyecto exterior 4" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/56b41ccd-4ab6-4e41-83fa-bd311b5b42b4.jpeg"
+                                   alt="Proyecto exterior 5" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/5cb3a90f-c01b-4acc-ae35-58578aab0dbf.jpeg"
+                                   alt="Proyecto exterior 6" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/a522f95c-0a11-4635-88b6-5914c6ea35f9.jpeg"
+                                   alt="Proyecto exterior 7" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/b4dafe18-0da1-4fea-bb6e-a6f48d2a8b5f.jpeg"
+                                   alt="Proyecto exterior 8" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/ce912005-d5c7-4d85-bb1b-af952c38bcef.jpeg"
+                                   alt="Proyecto exterior 9" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/WhatsApp Image 2025-11-26 at 20.47.14.jpeg"
+                                   alt="Proyecto exterior 10" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/WhatsApp Image 2025-11-26 at 20.47.15.jpeg"
+                                   alt="Proyecto exterior 11" data-category="exterior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_exterior/exteriorr.png"
+                                   alt="Proyecto exterior 12" data-category="exterior">
+
+                            <!-- INTERIORES -->
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.42.13.jpeg"
+                                   alt="Proyecto interior 1" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.42.14 (1).jpeg"
+                                   alt="Proyecto interior 2" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.42.14.jpeg"
+                                   alt="Proyecto interior 3" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.42.15.jpeg"
+                                   alt="Proyecto interior 4" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.43.09.jpeg"
+                                   alt="Proyecto interior 5" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.43.10.jpeg"
+                                   alt="Proyecto interior 6" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.46.17.jpeg"
+                                   alt="Proyecto interior 7" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/WhatsApp Image 2025-11-26 at 21.46.36.jpeg"
+                                   alt="Proyecto interior 8" data-category="interior">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_interior/interiorr.png"
+                                   alt="Proyecto interior 9" data-category="interior">
+
+                            <!-- PROGRESO -->
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/08bed895-77bd-4b14-b3d8-8f09f5054bbf.jpeg"
+                                   alt="Proyecto en progreso 1" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 20.47.14 (1).jpeg"
+                                   alt="Proyecto en progreso 2" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 20.47.17 (1).jpeg"
+                                   alt="Proyecto en progreso 3" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 20.47.17.jpeg"
+                                   alt="Proyecto en progreso 4" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 20.47.18.jpeg"
+                                   alt="Proyecto en progreso 5" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 20.47.46.jpeg"
+                                   alt="Proyecto en progreso 6" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 21.56.16.jpeg"
+                                   alt="Proyecto en progreso 7" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 21.59.56.jpeg"
+                                   alt="Proyecto en progreso 8" data-category="progreso">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_progreso/WhatsApp Image 2025-11-26 at 22.00.45.jpeg"
+                                   alt="Proyecto en progreso 9" data-category="progreso">
+
+                            <!-- EQUIPO -->
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.41.05.jpeg"
+                                   alt="Miembro del equipo 1" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.44.07.jpeg"
+                                   alt="Miembro del equipo 2" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.49.20.jpeg"
+                                   alt="Miembro del equipo 3" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.50.34.jpeg"
+                                   alt="Miembro del equipo 4" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.51.45 (1).jpeg"
+                                   alt="Miembro del equipo 5" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.51.45 (2).jpeg"
+                                   alt="Miembro del equipo 6" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.51.45 (3).jpeg"
+                                   alt="Miembro del equipo 7" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.51.45.jpeg"
+                                   alt="Miembro del equipo 8" data-category="equipo">
+                            <img src="/proyecto_final/imagenes_proyecto/imagenes_equipo/WhatsApp Image 2025-11-26 at 21.56.15.jpeg"
+                                   alt="Miembro del equipo 9" data-category="equipo">
+                     </div>
+              </section>
+
+       </main>
+       <footer>
+              <p>&copy; 2025 MEGA CONSTRUCCIONES. Todos los derechos reservados.</p>
+              <p>Dirección: Av. Policia #5 — Tel: +591 60129390 — Correo: megaconstrucciones73@gmail.com</p>
+       </footer>
+       <script src="/proyecto_final/JAVASCRIPT/proyecto.js"></script>
+</body>
+
+</html>
