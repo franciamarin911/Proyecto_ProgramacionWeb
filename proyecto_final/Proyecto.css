@@ -251,10 +251,17 @@ a:hover {
   body.pagina-inicio>aside {
     grid-area: aside;
     align-self: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 1.75rem 0 2.5rem;
   }
 
   body.pagina-inicio>#main-contenido {
     grid-area: main;
+    max-width: 100%;
+    width: 100%;
+    margin: 2rem 0 3rem;
+    padding-inline: 0;
   }
 
   body.pagina-inicio>footer {
